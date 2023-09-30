@@ -11,6 +11,17 @@ function TableOfContents () {
     'Jinxes',
     'Transfigurations'
   ]
+
+  return (
+    <>
+      <div id='content-card'>
+        <p>Charms</p>
+      </div>
+      <div id='content-card2'>
+        <p>Conjurations</p>
+      </div>
+    </>
+  )
 }
 
 export default TableOfContents
