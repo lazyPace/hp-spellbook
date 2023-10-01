@@ -27,17 +27,18 @@ function TableOfContents () {
 
   const generateCardStyle = index => ({
     flex: '1 0 calc(35% - 80px)',
+    fontWeight: 'bold',
     margin: '25px',
     padding: '10px',
     border: '1px solid #000',
     borderRadius: index % 2 === 0 ? '8px 24px' : '24px 8px',
     textAlign: 'center',
-    fontSize: '24px',
+    fontSize: '28px',
     color: hoveredIndex === index ? 'white' : 'black',
     backgroundColor:
       hoveredIndex === index
         ? cardColors[index % cardColors.length]
-        : 'rgba(210, 205, 185, 0.82)',
+        : 'rgba(254, 241, 193, 0.75)',
     transition: 'background-color 0.3s, color 0.3s',
     cursor: 'pointer'
   })
