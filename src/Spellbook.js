@@ -1,4 +1,4 @@
-// List of all spells
+// List of spells. Add alphabetically
 
 const spellbook = [
   {
