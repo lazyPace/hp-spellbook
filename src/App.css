@@ -7,43 +7,34 @@
 .header {
   background-color: rgba(116, 51, 8, 0.37);
   border: 2px solid black;
-  border-radius: 0px 25px;
+  border-radius: 8px 24px;
   color: rgb(196, 193, 186);
   margin: auto;
   margin-top: 1rem;
   width: 50%;
 }
 
-#content-card {
-  color: white;
-  font-size: 50px;
-  border: 2px solid black;
-  border-radius: 0px 25px;
-  width: 15%;
-  background-color: rgba(0, 128, 128, 0.75);
-  margin-left: 10rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
-#content-card:hover {
+#content-card1,
+#content-card2,
+#content-card3,
+#content-card4,
+#content-card5,
+#content-card6,
+#content-card7,
+#content-card8 {
   cursor: pointer;
-  background-color:rgb(0, 128, 128);
+  transition: background-color 0.3s;
 }
 
-#content-card2:hover {
-  cursor: pointer;
-  background-color:rgb(196, 135, 4);
+#content-card1:hover {
+  background-color: rgb(35, 37, 76);
 }
-
-#content-card2 {
-  color: white;
-  font-size: 50px;
-  border: 2px solid black;
-  border-radius: 0px 25px;
-  width: 15%;
-  background-color: rgba(196, 135, 4, 0.75);
-  margin-left: 10rem;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+#content-card2:hover,
+#content-card3:hover,
+#content-card4:hover,
+#content-card5:hover,
+#content-card6:hover,
+#content-card7:hover,
+#content-card8:hover {
+  opacity: 1
 }

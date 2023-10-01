@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function TableOfContents () {
   const spellTypes = [
@@ -12,13 +12,58 @@ function TableOfContents () {
     'Transfigurations'
   ]
 
+  const [hoveredIndex, setHoveredIndex] = useState(null)
+
+  const cardColors = [
+    'rgba(35, 37, 76, 0.75)',
+    'rgba(59, 122, 108, 0.75)',
+    'rgba(118, 28, 51, 0.75)',
+    'rgba(52, 110, 39, 0.75)',
+    'rgba(121, 84, 127, 0.75)',
+    'rgba(80, 90, 96, 0.75)',
+    'rgba(99, 127, 47, 0.75)',
+    'rgba(26, 106, 132, 0.75)'
+  ]
+
+  const generateCardStyle = index => ({
+    flex: '1 0 calc(35% - 80px)',
+    margin: '25px',
+    padding: '10px',
+    border: '1px solid #000',
+    borderRadius: index % 2 === 0 ? '8px 24px' : '24px 8px',
+    textAlign: 'center',
+    fontSize: '24px',
+    color: hoveredIndex === index ? 'white' : 'black',
+    backgroundColor:
+      hoveredIndex === index
+        ? cardColors[index % cardColors.length]
+        : 'rgba(210, 205, 185, 0.82)',
+    transition: 'background-color 0.3s, color 0.3s',
+    cursor: 'pointer'
+  })
+
+  const containerStyle = {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    padding: '20px',
+    maxWidth: '58rem'
+  }
+
   return (
     <>
-      <div id='content-card'>
-        <p>Charms</p>
-      </div>
-      <div id='content-card2'>
-        <p>Conjurations</p>
+      <div style={containerStyle}>
+        {spellTypes.map((spellType, index) => (
+          <div
+            key={index}
+            id={`content-card${index + 1}`}
+            style={generateCardStyle(index)}
+            onMouseEnter={() => setHoveredIndex(index)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <p>{spellType}</p>
+          </div>
+        ))}
       </div>
     </>
   )
