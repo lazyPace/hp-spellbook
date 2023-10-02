@@ -4,14 +4,111 @@
   font-weight: bold;
 }
 
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .header {
+  justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.568);
   border: 2px solid rgb(254, 241, 193);
   border-radius: 24px;
   color: rgb(254, 241, 193);
-  font-size: 30px;
+  font-size: 28px;
   margin: auto;
   margin-top: 1rem;
   width: 50%;
+}
+
+.wand-logo {
+  display: inline;
+  max-width: 100px;
+  height: auto;
+  margin: 10px 10px;
+  filter: drop-shadow(2px 1px 4px goldenrod);
+}
+
+.contents-heading {
+  margin-left: 1rem;
+}
+
+.dots {
+  justify-content: space-around;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin: 5px 5px 20px 10px;
+}
+
+ul li {
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgb(254, 241, 193);
+  border-radius: 50%;
+  margin-right: 5px;
+  animation: animate 2.0s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  40%,
+  100% {
+    transform: scale(0.2);
+  }
+  20% {
+    transform: scale(1);
+  }
+}
+
+ul li:nth-child(1) {
+  animation-delay: -1.6s;
+  background: rgba(35, 37, 76, 0.75);
+  box-shadow: 0 0 40px lavender;
+}
+
+ul li:nth-child(2) {
+  animation-delay: -1.4s;
+  background: rgba(59, 122, 108, 0.75);
+  box-shadow: 0 0 40px darkcyan;
+}
+
+ul li:nth-child(3) {
+  animation-delay: -1.2s;
+  background: rgba(118, 28, 51, 0.75);
+  box-shadow: 0 0 40px indianred;
+}
+
+ul li:nth-child(4) {
+  animation-delay: -1.0s;
+  background: rgba(52, 110, 39, 0.75);
+  box-shadow: 0 0 40px palegreen;
+}
+
+ul li:nth-child(5) {
+  animation-delay: -0.8s;
+  background: rgba(121, 84, 127, 0.75);
+  box-shadow: 0 0 40px thistle;
+}
+
+ul li:nth-child(6) {
+  animation-delay: -0.6s;
+  background: rgba(80, 90, 96, 0.75);
+  box-shadow: 0 0 40px cadetblue;
+}
+
+ul li:nth-child(7) {
+  animation-delay: -0.4s;
+  background: rgba(99, 127, 47, 0.75);
+  box-shadow: 0 0 40px olivedrab;
+}
+
+ul li:nth-child(8) {
+  animation-delay: -0.2s;
+  background: rgba(26, 106, 132, 0.75);
+  box-shadow: 0 0 40px powderblue;
 }
 
