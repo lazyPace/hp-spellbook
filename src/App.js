@@ -1,40 +1,54 @@
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import './App.css'
 import TableOfContents from './TableOfContents'
+import SpellTypePage from './SpellTypePage'
 
 function App () {
   return (
-    <div className='App'>
-      <div className='header'>
-        <div className='content-container'>
-          <div className='shimmer'>
-            <img
-              alt='the wand'
-              src={process.env.PUBLIC_URL + '/imgs/therealwand.png'}
-              className='wand-logo'
-            />
+    <Router>
+      <div className='App'>
+        <div className='header'>
+          <div className='content-container'>
+            <div className='shimmer'>
+              <img
+                alt='the wand'
+                src={process.env.PUBLIC_URL + '/imgs/therealwand.png'}
+                className='wand-logo'
+              />
+            </div>
+            <h1 className='contents-heading'>Wizarding World Spellbook</h1>
+            <div className='shimmer'>
+              <img
+                alt='the wand'
+                src={process.env.PUBLIC_URL + '/imgs/therealwand.png'}
+                className='wand-logo'
+              />
+            </div>
           </div>
-          <h1 className='contents-heading'>Wizarding World Spellbook</h1>
-          <div className='shimmer'>
-            <img
-              alt='the wand'
-              src={process.env.PUBLIC_URL + '/imgs/therealwand.png'}
-              className='wand-logo'
-            />
-          </div>
+
+          <ul className='dots'>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </div>
-        <ul className='dots'>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
+        <Link to='/'>
+          <button type='button' name='home-button' className='home-button'>
+            Table of Contents
+          </button>
+        </Link>
+        <Routes>
+          <Route path='/spell-type/:type' element={<SpellTypePage />} />
+        </Routes>
+        <TableOfContents />
       </div>
-      <TableOfContents />
-    </div>
+    </Router>
   )
 }
 
