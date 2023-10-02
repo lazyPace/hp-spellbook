@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 function TableOfContents () {
   const spellTypes = [
@@ -24,6 +24,10 @@ function TableOfContents () {
     'rgba(99, 127, 47, 0.75)',
     'rgba(26, 106, 132, 0.75)'
   ]
+
+  useEffect(() => {
+    document.title = "LazyPace's Book of Spells"
+  }, [])
 
   const generateCardStyle = index => ({
     flex: '1 0 calc(35% - 80px)',
