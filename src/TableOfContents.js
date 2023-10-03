@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react'
+import { Link, Route, Routes } from 'react-router-dom'
+import SpellTypePage from './SpellTypePage'
 
 function TableOfContents () {
   const spellTypes = [
     'Charms',
     'Conjurations',
-    'Counter-Spells',
+    'Counter Spells',
     'Curses',
     'Healing Spells',
     'Hexes',
@@ -34,7 +36,7 @@ function TableOfContents () {
     fontWeight: 'bold',
     margin: '25px',
     padding: '10px',
-    border: '1px solid #000',
+    border: hoveredIndex === index ? '2px outset white' : '2px outset #000',
     borderRadius: index % 2 === 0 ? '8px 24px' : '24px 8px',
     textAlign: 'center',
     fontSize: '28px',
@@ -43,33 +45,43 @@ function TableOfContents () {
       hoveredIndex === index
         ? cardColors[index % cardColors.length]
         : 'rgba(254, 241, 193, 0.75)',
-    transition: 'background-color 0.3s, color 0.3s',
+    transition:
+      'background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out',
     cursor: 'pointer'
   })
 
   const containerStyle = {
     display: 'flex',
     flexWrap: 'wrap',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     padding: '20px',
-    maxWidth: '58rem'
+    maxWidth: '58rem',
+    margin: 'auto'
   }
 
   return (
     <>
       <div style={containerStyle}>
         {spellTypes.map((spellType, index) => (
-          <div
-            key={index}
-            id={`content-card${index + 1}`}
-            style={generateCardStyle(index)}
-            onMouseEnter={() => setHoveredIndex(index)}
-            onMouseLeave={() => setHoveredIndex(null)}
-          >
-            <p>{spellType}</p>
-          </div>
+          <Link to={`/spell-type/${spellType.toLowerCase()}`} key={index}>
+            <div
+              key={index}
+              id={`content-card${index + 1}`}
+              style={generateCardStyle(index)}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              <p>{spellType}</p>
+            </div>
+          </Link>
         ))}
       </div>
+      <Routes>
+        <Route
+          path='/spell-type/:type'
+          element={({ match }) => <SpellTypePage type={match.params.type} />}
+        />
+      </Routes>
     </>
   )
 }
