@@ -6,10 +6,10 @@ function SpellTypePage () {
   const { type } = useParams()
 
   console.log(type)
-  const selectedSpells = spellbook.filter(spell => spell.type == type)
+  const selectedSpells = spellbook.filter(spell => spell.type === type)
   useEffect(() => {
     document.title = `${type.toUpperCase()} - LazyPace's Book of Spells`
-  }, [])
+  }, [type])
   console.log(selectedSpells)
   return (
     <>
