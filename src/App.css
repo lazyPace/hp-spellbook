@@ -48,6 +48,15 @@ a {
   width: 50%;
 }
 
+.spell-header {
+  background-color: rgba(0, 0, 0, 0.568);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin: auto;
+  width: 33%;
+}
+
 .wand-logo {
   display: inline;
   max-width: 100px;
@@ -136,4 +145,30 @@ ul li:nth-child(8) {
   background: rgba(26, 106, 132, 0.75);
   box-shadow: 0 0 40px powderblue;
 }
+/*
+.spell-table {
+  background-color: white;
+}
+*/
+table {
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.750)
+}
 
+
+
+th {
+  font-size: 22px;
+  font-weight: bold;
+  border: 1px solid rgb(254, 241, 193);
+  border-radius: 12px;
+  color: rgb(254, 241, 193);
+  padding: 5px;
+}
+
+td {
+  padding: 8px;
+  color: rgb(254, 241, 193)
+}

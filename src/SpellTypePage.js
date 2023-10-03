@@ -1,35 +1,42 @@
-import React from 'react'
-import Spellbook from './Spellbook'
+import React, { useEffect } from 'react'
+import spellbook from './Spellbook'
 import { useParams } from 'react-router-dom'
 
 function SpellTypePage () {
   const { type } = useParams()
 
-  const firstWord = type.split(' ')[0] // get the first word only of the spell type
-
-  const removePlural = word => {
-    const pluralSuffixes = ['s', 'es']
-
-    for (const suffix of pluralSuffixes) {
-      if (word.endsWith(suffix)) {
-        if (suffix === 'es') {
-          console.log(word.slice(0, -2))
-          return word.slice(0, -2)
-        } else {
-          return word.slice(0, -1)
-        }
-      }
-    }
-
-    return word
-  }
-
-  const formattedWord = removePlural(firstWord)
-
+  console.log(type)
+  const selectedSpells = spellbook.filter(spell => spell.type == type)
+  useEffect(() => {
+    document.title = `${type.toUpperCase()} - LazyPace's Book of Spells`
+  }, [])
+  console.log(selectedSpells)
   return (
-    <div>
-      <h2>{formattedWord[0].toUpperCase() + formattedWord.slice(1)} Spells</h2>
-    </div>
+    <>
+      <div className='spell-header'>
+        <h2>{type.toUpperCase()}</h2>
+      </div>
+      <div className='spell-table'>
+        <table>
+          <thead>
+            <tr>
+              <th>Incantation</th>
+              <th>Nickname</th>
+              <th>Effect</th>
+            </tr>
+          </thead>
+          <tbody>
+            {selectedSpells.map(spell => (
+              <tr key={spell.incantation}>
+                <td>{spell.incantation || 'No standard incantation'}</td>
+                <td>{spell.nickname || 'N/A'}</td>
+                <td>{spell.effect}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
   )
 }
 
