@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import spellbook from './Spellbook'
 import { useParams } from 'react-router-dom'
+import './App.css'
 
 function SpellTypePage () {
   const { type } = useParams()
@@ -28,7 +29,9 @@ function SpellTypePage () {
           <tbody>
             {selectedSpells.map(spell => (
               <tr key={spell.incantation}>
-                <td>{spell.incantation || 'No standard incantation'}</td>
+                <td className={spell.restricted ? 'restricted-spell' : ''}>
+                  <em> {spell.incantation || 'No standard incantation'}</em>
+                </td>
                 <td>{spell.nickname || 'N/A'}</td>
                 <td>{spell.effect}</td>
               </tr>
