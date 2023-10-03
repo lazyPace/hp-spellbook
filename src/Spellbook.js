@@ -34,6 +34,28 @@ const spellbook = [
     difficulty: 5
   },
   {
+    incantation: 'Anteoculatia',
+    effect: 'Causes the target to grow antlers.',
+    type: 'jinxes',
+    restricted: false,
+    difficulty: 4
+  },
+  {
+    nickname: 'Anti-Cheating Spell',
+    effect: 'Used to prevent cheating. Typically used on quills and parchment.',
+    type: 'charms',
+    restricted: false,
+    difficulty: 6
+  },
+  {
+    nickname: 'Anti-Disapparition Jinx',
+    effect:
+      'Prevents Disapparation in an area. It is used to entrap an enemy in an area.',
+    type: 'jinxes',
+    restricted: false,
+    difficulty: 8
+  },
+  {
     incantation: 'Aparecium',
     nickname: 'Revealing Charm',
     effect:
@@ -41,6 +63,14 @@ const spellbook = [
     type: 'charms',
     restricted: false,
     difficulty: 3
+  },
+  {
+    incantation: 'Aqua Eructo',
+    effect:
+      'Used to create and control a jet of clear water. Related to Aguamenti.',
+    type: 'charms',
+    restricted: false,
+    difficulty: 5
   },
   {
     incantation: 'Arresto Momentum',
@@ -81,6 +111,28 @@ const spellbook = [
     type: 'conjurations',
     restricted: false,
     difficulty: 6
+  },
+  {
+    incantation: 'Avenseguim',
+    effect: 'Turns an object into a tracking device.',
+    type: 'charms',
+    restricted: false,
+    difficulty: 7
+  },
+  {
+    nickname: 'Babbling Curse',
+    effect: 'Caused uncontrolled babbling.',
+    type: 'curses',
+    restricted: true,
+    difficulty: 4
+  },
+  {
+    nickname: 'Bat-Bogey Hex',
+    effect:
+      "Transforms the target's bogeys into large bats that then fly out of the victim's nose.",
+    type: 'hexes',
+    restricted: false,
+    difficulty: 5
   },
   {
     incantation: 'Bombarda',
