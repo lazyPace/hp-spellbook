@@ -56,7 +56,81 @@ a {
   border: 2px solid rgb(254, 241, 193);
   border-radius: 12px 12px 24px 24px;
   color: rgb(254, 241, 193);
-  margin: auto;
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+
+.charms-header {
+  background-color: rgba(35, 37, 76, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+.conjurations-header {
+  background-color: rgba(59, 122, 108, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+.counterspells-header {
+  background-color: rgba(118, 28, 51, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+.curses-header {
+  background-color: rgba(52, 110, 39, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+.healingspells-header {
+  background-color: rgba(121, 84, 127, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+.hexes-header {
+  background-color: rgba(80, 90, 96, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+.jinxes-header {
+  background-color: rgba(99, 127, 47, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+.transfigurations-header {
+  background-color: rgba(26, 106, 132, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
   width: 33%;
 }
 

@@ -73,7 +73,10 @@ function TableOfContents () {
     <>
       <div style={containerStyle}>
         {spellTypes.map((spellType, index) => (
-          <Link to={`/spell-type/${spellType.toLowerCase()}`} key={index}>
+          <Link
+            to={`/spell-type/${spellType.split(' ').join('').toLowerCase()}`}
+            key={index}
+          >
             <div
               key={index}
               id={`content-card${index + 1}`}

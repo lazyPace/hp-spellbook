@@ -11,7 +11,7 @@ function SpellTypePage () {
     spell => spell.subject === 'Transfiguration' && spell.difficulty <= 2
   )
 
-  console.log(sumOfClasses)
+  console.log(type)
   const selectedSpells = spellbook.filter(spell => spell.type === type)
   useEffect(() => {
     document.title = `${type.toUpperCase()} - LazyPace's Book of Spells`
@@ -19,7 +19,7 @@ function SpellTypePage () {
   //console.log(selectedSpells)
   return (
     <>
-      <div className='spell-header'>
+      <div className={`${type}-header`}>
         <h2>{type.toUpperCase()}</h2>
       </div>
       <div className='spell-table'>
