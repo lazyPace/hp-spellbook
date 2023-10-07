@@ -65,10 +65,6 @@ a {
   filter: drop-shadow(2px 1px 4px goldenrod);
 }
 
-.contents-heading {
-  margin-left: 1rem;
-}
-
 .dots {
   justify-content: space-around;
   display: flex;

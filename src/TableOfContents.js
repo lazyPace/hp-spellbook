@@ -3,6 +3,7 @@ import { Link, Route, Routes } from 'react-router-dom'
 import SpellTypePage from './SpellTypePage'
 
 function TableOfContents () {
+  const [hoveredIndex, setHoveredIndex] = useState(null)
   const spellTypes = [
     'Charms',
     'Conjurations',
@@ -13,8 +14,6 @@ function TableOfContents () {
     'Jinxes',
     'Transfigurations'
   ]
-
-  const [hoveredIndex, setHoveredIndex] = useState(null)
 
   const cardColors = [
     'rgba(35, 37, 76, 0.75)',
