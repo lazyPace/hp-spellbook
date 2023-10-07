@@ -295,3 +295,5 @@ const potionbook = [
     ]
   }
 ]
+
+export default potionbook
