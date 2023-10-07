@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
-import { Link, Route, Routes } from 'react-router-dom'
+import { Link, Route, Routes, useNavigate } from 'react-router-dom'
 import SpellTypePage from './SpellTypePage'
 
 function TableOfContents () {
+  const navigate = useNavigate()
+  const [hoveredIndex, setHoveredIndex] = useState(null)
   const spellTypes = [
     'Charms',
     'Conjurations',
@@ -13,8 +15,6 @@ function TableOfContents () {
     'Jinxes',
     'Transfigurations'
   ]
-
-  const [hoveredIndex, setHoveredIndex] = useState(null)
 
   const cardColors = [
     'rgba(35, 37, 76, 0.75)',
@@ -28,14 +28,24 @@ function TableOfContents () {
   ]
 
   useEffect(() => {
-    document.title = "LazyPace's Book of Spells"
-  }, [])
+    const abortController = new AbortController()
+    const homeTitle = `LazyPace's Book of Spells`
+
+    const handleNav = () => {
+      document.title = homeTitle
+    }
+
+    return () => {
+      handleNav()
+      abortController.abort()
+    }
+  }, [navigate])
 
   const generateCardStyle = index => ({
     flex: '1 0 calc(35% - 80px)',
     fontWeight: 'bold',
-    margin: '25px',
     padding: '10px',
+    justifyContent: 'space-between',
     border: hoveredIndex === index ? '2px outset white' : '2px outset #000',
     borderRadius: index % 2 === 0 ? '8px 24px' : '24px 8px',
     textAlign: 'center',

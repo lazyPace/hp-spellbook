@@ -43,10 +43,16 @@ function App () {
             Table of Contents
           </button>
         </Link>
+        <div className='spell-header'>
+          <h2>Spell Types</h2>
+        </div>
         <Routes>
           <Route path='/spell-type/:type' element={<SpellTypePage />} />
         </Routes>
         <TableOfContents />
+        <div className='spell-header'>
+          <h2>Tangible Magic</h2>
+        </div>
       </div>
     </Router>
   )

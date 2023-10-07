@@ -6,12 +6,17 @@ import './App.css'
 function SpellTypePage () {
   const { type } = useParams()
 
-  console.log(type)
+  // use below var to check how many classes for a given subject in the log
+  const sumOfClasses = spellbook.filter(
+    spell => spell.subject === 'Transfiguration' && spell.difficulty <= 2
+  )
+
+  console.log(sumOfClasses)
   const selectedSpells = spellbook.filter(spell => spell.type === type)
   useEffect(() => {
     document.title = `${type.toUpperCase()} - LazyPace's Book of Spells`
   }, [type])
-  console.log(selectedSpells)
+  //console.log(selectedSpells)
   return (
     <>
       <div className='spell-header'>
