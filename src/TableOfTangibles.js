@@ -6,30 +6,29 @@ import './App.css'
 
 function TableOfTangibles ({ cardStyles, hover }) {
   const categories = [
-    'Alchemy',
     'Care of Magical Creatures',
     'Herbology',
     'Muggle Studies',
-    'Potions'
+    'Potions',
+    'Wand Lore'
   ]
 
   return (
     <>
       <div className='card-container'>
-        {categories.map((tangible, index) => (
+        {categories.map((tangibles, index) => (
           <Link
-            to
-            {...`/tangibles/${tangible.split(' ').join('').toLowerCase()}`}
+            to={`/tangibles/${tangibles.split(' ').join('').toLowerCase()}`}
             key={index}
           >
             <div
               key={index}
-              id={`tangible-card${index + 9}`}
+              id={`tangibles-card${index + 9}`}
               style={cardStyles(index)}
               onMouseEnter={() => hover(index)}
               onMouseLeave={() => hover(null)}
             >
-              <p>{tangible}</p>
+              <p>{tangibles}</p>
             </div>
           </Link>
         ))}

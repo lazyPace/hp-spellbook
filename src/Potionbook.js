@@ -293,6 +293,30 @@ const potionbook = [
       'Add powdered porcupine quills until the potion turns white and then leave to simmer for 2 hours.',
       'Return to potion and wave your wand twice over the cauldron to complete.'
     ]
+  },
+  {
+    name: 'Elixir to Induce Euphoria',
+    effect:
+      'Induces a sense of sudden, inexplicable happiness upon the drinker.',
+    color: 'Sunshine-yellow',
+    difficulty: 6,
+    type: 'potions',
+    subject: 'Potions',
+    ingredients: [
+      'Shrivelfig',
+      'Porcupine quills',
+      'Peppermint sprigs',
+      'Sopophorous beans',
+      'Wormwood'
+    ],
+    instructions: [
+      'Crush shrivelfig with knife and add all resultant juices and pieces to cauldron.',
+      'Add porcupine quills.',
+      'Stir 4 times counterclockwise, then add a sprig of peppermint to counteract any negative side-effects.',
+      'Add sopophorous beans and wormwood.',
+      'Stir six times anti-clockwise.',
+      'Wave your wand over the cauldron until a rainbow is emitted, which signifies the potion is completed.'
+    ]
   }
 ]
 
