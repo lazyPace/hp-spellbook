@@ -171,6 +171,16 @@ a {
   width: 33%;
 }
 
+.tangible-header {
+  background-color: rgba(24, 11, 83, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+
 .wand-logo {
   display: inline;
   max-width: 100px;

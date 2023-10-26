@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
 import TangibleTypePage from './TangibleTypePage'
-import potionbook from './Potionbook'
+import potionbook from './data/Potionbook'
 import './App.css'
 
 function TableOfTangibles ({ cardStyles, hover }) {
@@ -33,12 +33,6 @@ function TableOfTangibles ({ cardStyles, hover }) {
           </Link>
         ))}
       </div>
-      <Routes>
-        <Route
-          path='/tangibles/:type'
-          element={({ match }) => <TangibleTypePage type={match.params.type} />}
-        />
-      </Routes>
     </>
   )
 }

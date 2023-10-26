@@ -1,9 +1,12 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import './App.css'
+
+import Header from './Header'
 import TableOfSpells from './TableOfSpells'
 import SpellTypePage from './SpellTypePage'
 import TableOfTangibles from './TableOfTangibles'
+import TangibleTypePage from './TangibleTypePage'
 
 function App () {
   const [spellHover, setSpellHover] = useState(null)
@@ -53,36 +56,7 @@ function App () {
   return (
     <Router>
       <div className='App'>
-        <div className='header'>
-          <div className='content-container'>
-            <div className='shimmer'>
-              <img
-                alt='the wand'
-                src={process.env.PUBLIC_URL + '/imgs/therealwand.png'}
-                className='wand-logo'
-              />
-            </div>
-            <h1 className='contents-heading'>Wizarding World Spellbook</h1>
-            <div className='shimmer'>
-              <img
-                alt='the wand'
-                src={process.env.PUBLIC_URL + '/imgs/therealwand.png'}
-                className='wand-logo'
-              />
-            </div>
-          </div>
-
-          <ul className='dots'>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
+        <Header />
         <Link to='/'>
           <button type='button' name='home-button' className='home-button'>
             Table of Contents
@@ -93,6 +67,7 @@ function App () {
         </div>
         <Routes>
           <Route path='/spell-type/:type' element={<SpellTypePage />} />
+          <Route path='/tangibles/:type' element={<TangibleTypePage />} />
         </Routes>
         <TableOfSpells
           cardStyles={index => generateCardStyle(index, 'spell')}
