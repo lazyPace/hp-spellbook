@@ -4,18 +4,46 @@
   font-weight: bold;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+  background-color:rgba(0, 0, 0, 0.568)
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(254, 241, 193, 0.75);
+  border-radius: 12px
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(254, 241, 193);
+}
+
+::-webkit-scrollbar-track {
+  background-color: black
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #eee
+}
+
 .content-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-a {
-  text-decoration: none;
-}
 
-[id^='content-card'] {
-  margin: 20px;
+
+.header {
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.568);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 24px;
+  color: rgb(254, 241, 193);
+  font-size: 28px;
+  margin: auto;
+  margin-top: 1rem;
+  width: 50%;
 }
 
 .home-button {
@@ -39,16 +67,25 @@ a {
   
 }
 
-.header {
-  justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.568);
-  border: 2px solid rgb(254, 241, 193);
-  border-radius: 24px;
-  color: rgb(254, 241, 193);
-  font-size: 28px;
-  margin: auto;
-  margin-top: 1rem;
-  width: 50%;
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px;
+	max-width: 58rem;
+	margin: auto;
+}
+
+[id^='content-card'] {
+  margin: 20px;
+}
+
+[id^='tangible-card'] {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .spell-header {
@@ -56,7 +93,91 @@ a {
   border: 2px solid rgb(254, 241, 193);
   border-radius: 12px 12px 24px 24px;
   color: rgb(254, 241, 193);
-  margin: auto;
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+
+.charms-header {
+  background-color: rgba(35, 37, 76, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+.conjurations-header {
+  background-color: rgba(59, 122, 108, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+.counterspells-header {
+  background-color: rgba(118, 28, 51, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+.curses-header {
+  background-color: rgba(52, 110, 39, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+.healingspells-header {
+  background-color: rgba(121, 84, 127, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+.hexes-header {
+  background-color: rgba(80, 90, 96, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+.jinxes-header {
+  background-color: rgba(99, 127, 47, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+.transfigurations-header {
+  background-color: rgba(26, 106, 132, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
+  width: 33%;
+}
+
+.tangible-header {
+  background-color: rgba(24, 11, 83, 0.75);
+  border: 2px solid rgb(254, 241, 193);
+  border-radius: 12px 12px 24px 24px;
+  color: rgb(254, 241, 193);
+  margin-top: 5px;
+  margin: 1rem auto 1rem auto;
   width: 33%;
 }
 

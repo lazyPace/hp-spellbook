@@ -32,7 +32,7 @@ const spellbook = [
   {
     incantation: 'Anapneo',
     effect: "Clear's the target's airway if they are choking on something.",
-    type: 'healing spells',
+    type: 'healingspells',
     restricted: false,
     difficulty: 5,
     subject: 'Post-Grad'
@@ -418,7 +418,7 @@ const spellbook = [
     incantation: 'Episkey',
     effect:
       'Used to heal relatively minor injuries, such as broken bones and cartilage.',
-    type: 'healing spells',
+    type: 'healingspells',
     restricted: false,
     difficulty: 7,
     subject: 'Transfiguration'
@@ -497,7 +497,7 @@ const spellbook = [
     nickname: 'Bandaging Charm',
     effect:
       'Conjures up bandages and wraps them around a wound, splinting any broken bones.',
-    type: 'healing spells',
+    type: 'healingspells',
     restricted: false,
     difficulty: 5,
     subject: 'Transfiguration'
@@ -530,7 +530,7 @@ const spellbook = [
     nickname: 'General Counter-Spell',
     effect:
       'Terminates all spell effects within the vicinity of the caster. Does not work on all spell effects.',
-    type: 'counter spells',
+    type: 'counterspells',
     restricted: false,
     difficulty: 7,
     subject: 'Defense Against the Dark Arts'
@@ -818,7 +818,7 @@ const spellbook = [
   {
     incantation: 'Liberacorpus',
     effect: 'Counter-Jinx to Levicorpus.',
-    type: 'counter spells',
+    type: 'counterspells',
     restricted: false,
     difficulty: 3
   },
@@ -862,7 +862,7 @@ const spellbook = [
   {
     incantation: 'Meteoloojinx Recanto',
     effect: 'Causes weather effects caused by jinxes to cease.',
-    type: 'counter spells',
+    type: 'counterspells',
     restricted: false,
     difficulty: 4,
     subject: 'Charms'
@@ -1414,7 +1414,7 @@ const spellbook = [
     incantation: 'Vulnera Sanentur',
     effect:
       'Healing spell that slows blood flow, clears residue and knits wounds.',
-    type: 'healing spells',
+    type: 'healingspells',
     restricted: false,
     difficulty: 7,
     subject: 'Transfiguration'

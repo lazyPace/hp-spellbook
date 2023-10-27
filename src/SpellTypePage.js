@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import spellbook from './Spellbook'
+import spellbook from './data/Spellbook'
 import { useParams } from 'react-router-dom'
 import './App.css'
 
@@ -11,15 +11,16 @@ function SpellTypePage () {
     spell => spell.subject === 'Transfiguration' && spell.difficulty <= 2
   )
 
-  console.log(sumOfClasses)
+  console.log(type)
   const selectedSpells = spellbook.filter(spell => spell.type === type)
+
   useEffect(() => {
     document.title = `${type.toUpperCase()} - LazyPace's Book of Spells`
   }, [type])
   //console.log(selectedSpells)
   return (
     <>
-      <div className='spell-header'>
+      <div className={`${type}-header`}>
         <h2>{type.toUpperCase()}</h2>
       </div>
       <div className='spell-table'>
@@ -37,7 +38,7 @@ function SpellTypePage () {
                 <td className={spell.restricted ? 'restricted-spell' : ''}>
                   <em> {spell.incantation || 'No standard incantation'}</em>
                 </td>
-                <td>{spell.nickname || 'N/A'}</td>
+                <td>{spell.nickname || '-'}</td>
                 <td>{spell.effect}</td>
               </tr>
             ))}
