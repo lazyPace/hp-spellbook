@@ -50,7 +50,8 @@ const spellbook = [
     effect: 'Used to prevent cheating. Typically used on quills and parchment.',
     type: 'charms',
     restricted: false,
-    difficulty: 6
+    difficulty: 6,
+    subject: 'Post-Grad'
   },
   {
     nickname: 'Anti-Disapparition Jinx',
@@ -58,7 +59,8 @@ const spellbook = [
       'Prevents Disapparation in an area. It is used to entrap an enemy in an area.',
     type: 'jinxes',
     restricted: false,
-    difficulty: 8
+    difficulty: 8,
+    subject: 'Post-Grad'
   },
   {
     incantation: 'Aparecium',
@@ -136,7 +138,8 @@ const spellbook = [
     effect: 'Caused uncontrolled babbling.',
     type: 'curses',
     restricted: true,
-    difficulty: 4
+    difficulty: 4,
+    subject: 'Defense Against the Dark Arts'
   },
   {
     nickname: 'Bat-Bogey Hex',
@@ -190,7 +193,8 @@ const spellbook = [
       'Expands the internal dimensions of an object without affecting the external dimensions.',
     type: 'charms',
     restricted: true,
-    difficulty: 8
+    difficulty: 8,
+    subject: 'Post-Grad'
   },
   {
     incantation: 'Cave inimicum',
@@ -508,7 +512,7 @@ const spellbook = [
     type: 'charms',
     restricted: false,
     difficulty: 9,
-    subject: 'charms'
+    subject: 'Charms'
   },
   {
     nickname: 'Fiendfyre',
@@ -709,7 +713,8 @@ const spellbook = [
       'Creats an invisible magical barrier around an object, such as a door or window. This barrier bounces objects off of it, and muffles sounds.',
     type: 'charms',
     restricted: false,
-    difficulty: 6
+    difficulty: 6,
+    subject: 'Charms'
   },
   {
     incantation: 'Impervius',
@@ -772,7 +777,8 @@ const spellbook = [
     effect: `Reduces a target's mental processes.`,
     types: 'jinxes',
     restricted: true,
-    difficulty: 4
+    difficulty: 4,
+    subject: 'Defense Against the Dark Arts'
   },
   {
     incantation: 'Lacarnum Inflamari',
@@ -805,7 +811,8 @@ const spellbook = [
       'Allows the caster to delve into the mind of the victim, allowing the caster to see memories, thoughs and emotions.',
     type: 'charms',
     restricted: true,
-    difficulty: 8
+    difficulty: 8,
+    subject: 'Post-Grad'
   },
   {
     incantation: 'Levicorpus',
@@ -820,7 +827,8 @@ const spellbook = [
     effect: 'Counter-Jinx to Levicorpus.',
     type: 'counterspells',
     restricted: false,
-    difficulty: 3
+    difficulty: 3,
+    subject: 'Defense Against the Dark Arts'
   },
   {
     incantation: 'Locomotor',

@@ -5,9 +5,8 @@ import './App.css'
 
 function TangibleTypePage () {
   const { type } = useParams()
-  const { tangibles } = potionbook
 
-  console.log('the type is ', type)
+  console.log(potionbook)
 
   return (
     <div className={`tangible-header`}>

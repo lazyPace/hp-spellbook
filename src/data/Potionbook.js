@@ -317,6 +317,52 @@ const potionbook = [
       'Stir six times anti-clockwise.',
       'Wave your wand over the cauldron until a rainbow is emitted, which signifies the potion is completed.'
     ]
+  },
+  {
+    name: 'Erumpent Potion',
+    effect:
+      'Explodes when touched by an outside source. Methods exist to brew this potion without it exploding.',
+    color: 'Green or Orange',
+    difficulty: 6,
+    type: 'potions',
+    subject: 'Potions',
+    ingredients: ['Erumpent Horn', 'Erumpent Tail', 'Exploding Fluid'],
+    instructions: [
+      'Set cauldron to a rolling boil before adding any ingredients.',
+      'Add 5 slices of Erumpent tail and stir until it dissolves. Solution should be mossy green in color.',
+      'Crush Erumpent horn into a fine powder and then measure out 40mg exactly. Stir into potion until it turns bright yellow-green in color.',
+      'Let solution boil for 15 minutes uninterrupted. The potion should turn a pastel yellow after this time has elapsed.',
+      'Measure 5mg of Exploding fluid (horn fluid) and add this to the solution a drop at a time (should be 10 drops). With each drop, a cloud of black smoke should hover at the surface of the potion. Stir 10 times clockwise after each drop is added. The potion should turn steadily orange.',
+      'Let potion boil for 30 more minutes. The final potion should be either green or orange in color and should appear slightly simmering, even when room temperature.'
+    ]
+  },
+  {
+    name: 'Felix Felicis',
+    effect:
+      'Makes the drinker extraordinarily lucky for a period of time, during which every action they take is successful.',
+    color: 'Molten gold',
+    difficulty: 8,
+    type: 'potions',
+    subject: 'Potions',
+    ingredients: [
+      'Ashwinder egg',
+      'Squill bulb',
+      'Murtlap tentacles',
+      'Tincture of thyme',
+      'Occamy eggshell',
+      'Powdered common rue'
+    ],
+    instructions: [
+      'Add ashwinder egg to cauldron, followed by horseradish. Heat.',
+      'Juice a quill bulb, add to cauldron and stir vigorously for 7 minutes.',
+      'Chop up anemone-like growth on the back of Murtlap, add to mixture and heat.',
+      'Add a dash of tincture of thym and stir slowly for 7 minutes.',
+      'Leave solution to simmer softly (2-3 bubbles a minute) for at least 30 days. Solution should slowly turn a muted silver color.',
+      'Upon returning to cauldron, add ground up Occamy eggshell and stir in slowly. Heat.',
+      'Add a sprinkle of powdered common rue over the surface and stir vigorously while heating for 7 minutes.',
+      'Let cauldron boil over high heat for at least 150 days. Potion should turn a muted gold color over this time.',
+      'Once enough time has elapsed, the potion should exhibit the sloshing characteristics of the final potion. Wave your wand over the potion in a figure of eight and say "Felixempra!" to finish the potion.'
+    ]
   }
 ]
 
