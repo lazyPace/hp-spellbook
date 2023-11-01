@@ -57,7 +57,6 @@ function App () {
     <Router>
       <div className='App'>
         <Header />
-        <Header />
         <Link to='/'>
           <button type='button' name='home-button' className='home-button'>
             Table of Contents
@@ -68,12 +67,7 @@ function App () {
         </div>
         <Routes>
           <Route path='/spell-type/:type' element={<SpellTypePage />} />
-          <Route path='/tangibles/:type' element={<TangibleTypePage />} />
         </Routes>
-        <TableOfSpells
-          cardStyles={index => generateCardStyle(index, 'spell')}
-          hover={setSpellHover}
-        />
         <TableOfSpells
           cardStyles={index => generateCardStyle(index, 'spell')}
           hover={setSpellHover}
