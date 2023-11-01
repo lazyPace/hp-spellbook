@@ -11,7 +11,6 @@ function SpellTypePage () {
     spell => spell.subject === 'Transfiguration' && spell.difficulty <= 2
   )
 
-  console.log(type)
   const selectedSpells = spellbook.filter(spell => spell.type === type)
 
   useEffect(() => {

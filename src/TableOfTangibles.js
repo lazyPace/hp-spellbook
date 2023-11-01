@@ -10,7 +10,7 @@ function TableOfTangibles ({ cardStyles, hover }) {
     'Herbology',
     'Muggle Studies',
     'Potions',
-    'Wand Lore'
+    'Wand Craft'
   ]
 
   return (
