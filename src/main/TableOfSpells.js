@@ -32,6 +32,9 @@ function TableOfSpells ({ cardStyles, hover }) {
 
   return (
     <>
+      <Routes>
+        <Route path='/spell-type/:type' element={<SpellTypePage />} />
+      </Routes>
       <div className='card-container'>
         {spellTypes.map((spellType, index) => (
           <Link
@@ -50,12 +53,6 @@ function TableOfSpells ({ cardStyles, hover }) {
           </Link>
         ))}
       </div>
-      <Routes>
-        <Route
-          path='/spell-type/:type'
-          element={({ match }) => <SpellTypePage type={match.params.type} />}
-        />
-      </Routes>
     </>
   )
 }

@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
 import PotionPage from '../content/PotionPage'
-import potionbook from '../data/Potionbook'
 import '../App.css'
 
 function TableOfTangibles ({ cardStyles, hover }) {
@@ -15,6 +14,9 @@ function TableOfTangibles ({ cardStyles, hover }) {
 
   return (
     <>
+      <Routes>
+        <Route path='/tangibles/:type' element={<PotionPage />} />
+      </Routes>
       <div className='card-container'>
         {categories.map((tangibles, index) => (
           <Link

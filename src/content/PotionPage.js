@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import potionbook from '../data/Potionbook'
 import { useParams } from 'react-router-dom'
 import '../App.css'
@@ -12,6 +12,10 @@ function PotionPage () {
   )
 
   const selectedSubject = potionbook.filter(potion => potion.type === type)
+
+  useEffect(() => {
+    document.title = `${type.toUpperCase()} - LazyPace's Book of Spells`
+  }, [type])
 
   console.log(sumOfPotions)
 

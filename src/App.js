@@ -65,9 +65,7 @@ function App () {
         <div className='spell-header'>
           <h2>Spell Types</h2>
         </div>
-        <Routes>
-          <Route path='/spell-type/:type' element={<SpellTypePage />} />
-        </Routes>
+
         <TableOfSpells
           cardStyles={index => generateCardStyle(index, 'spell')}
           hover={setSpellHover}
@@ -75,9 +73,7 @@ function App () {
         <div className='spell-header'>
           <h2>Tangible Magic</h2>
         </div>
-        <Routes>
-          <Route path='/tangibles/:type' element={<PotionPage />} />
-        </Routes>
+
         <TableOfTangibles
           cardStyles={index => generateCardStyle(index, 'tangible')}
           hover={setTangibleHover}
