@@ -1,23 +1,9 @@
 import React, { useEffect } from 'react'
-import potionbook from '../data/Potionbook'
-import { useParams } from 'react-router-dom'
-import '../App.css'
 
-function PotionPage () {
-  const { type } = useParams()
-
-  // Filter entries by difficulty
-  const sumOfPotions = potionbook.filter(
-    potion => potion.subject === 'Potions' && potion.difficulty <= 2
-  )
-
-  const selectedSubject = potionbook.filter(potion => potion.type === type)
-
+function PotionTable ({ data, type }) {
   useEffect(() => {
     document.title = `${type.toUpperCase()} - LazyPace's Book of Spells`
   }, [type])
-
-  console.log(sumOfPotions)
 
   return (
     <>
@@ -35,7 +21,7 @@ function PotionPage () {
             </tr>
           </thead>
           <tbody>
-            {selectedSubject.map((potion, index) => (
+            {data.map((potion, index) => (
               <tr key={index}>
                 <td>
                   <em>{potion.name}</em>
@@ -66,4 +52,4 @@ function PotionPage () {
   )
 }
 
-export default PotionPage
+export default PotionTable
