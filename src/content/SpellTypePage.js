@@ -1,16 +1,14 @@
 import React, { useEffect } from 'react'
-import spellbook from './data/Spellbook'
+import spellbook from '../data/Spellbook'
 import { useParams } from 'react-router-dom'
-import './App.css'
+import '../App.css'
 
 function SpellTypePage () {
   const { type } = useParams()
 
   // use below var to check how many classes for a given subject in the log
-  const sumOfClasses = spellbook.filter(
-    spell => spell.subject === 'Transfiguration' && spell.difficulty <= 2
-  )
-
+  const sumOfClasses = spellbook.filter(spell => spell.subject === 'Post-Grad')
+  console.log(sumOfClasses)
   const selectedSpells = spellbook.filter(spell => spell.type === type)
 
   useEffect(() => {

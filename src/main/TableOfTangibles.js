@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
-import TangibleTypePage from './TangibleTypePage'
-import potionbook from './data/Potionbook'
-import './App.css'
+import TangibleTypePage from '../content/TangibleTypePage'
+import '../App.css'
 
 function TableOfTangibles ({ cardStyles, hover }) {
   const categories = [
@@ -15,6 +14,9 @@ function TableOfTangibles ({ cardStyles, hover }) {
 
   return (
     <>
+      <Routes>
+        <Route path='/tangibles/:type' element={<TangibleTypePage />} />
+      </Routes>
       <div className='card-container'>
         {categories.map((tangibles, index) => (
           <Link

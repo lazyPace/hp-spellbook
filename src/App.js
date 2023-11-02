@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Link } from 'react-router-dom'
 import './App.css'
 
-import Header from './Header'
-import TableOfSpells from './TableOfSpells'
-import SpellTypePage from './SpellTypePage'
-import TableOfTangibles from './TableOfTangibles'
-import TangibleTypePage from './TangibleTypePage'
+import Header from './main/Header'
+import TableOfSpells from './main/TableOfSpells'
+import TableOfTangibles from './main/TableOfTangibles'
 
 function App () {
   const [spellHover, setSpellHover] = useState(null)
@@ -65,9 +63,7 @@ function App () {
         <div className='spell-header'>
           <h2>Spell Types</h2>
         </div>
-        <Routes>
-          <Route path='/spell-type/:type' element={<SpellTypePage />} />
-        </Routes>
+
         <TableOfSpells
           cardStyles={index => generateCardStyle(index, 'spell')}
           hover={setSpellHover}
@@ -75,9 +71,7 @@ function App () {
         <div className='spell-header'>
           <h2>Tangible Magic</h2>
         </div>
-        <Routes>
-          <Route path='/tangibles/:type' element={<TangibleTypePage />} />
-        </Routes>
+
         <TableOfTangibles
           cardStyles={index => generateCardStyle(index, 'tangible')}
           hover={setTangibleHover}
