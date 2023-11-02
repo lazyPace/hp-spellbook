@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
-import TangibleTypePage from './TangibleTypePage'
-import potionbook from './data/Potionbook'
-import './App.css'
+import PotionPage from '../content/PotionPage'
+import potionbook from '../data/Potionbook'
+import '../App.css'
 
 function TableOfTangibles ({ cardStyles, hover }) {
   const categories = [

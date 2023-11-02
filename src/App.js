@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 import './App.css'
 
-import Header from './Header'
-import TableOfSpells from './TableOfSpells'
-import SpellTypePage from './SpellTypePage'
-import TableOfTangibles from './TableOfTangibles'
-import TangibleTypePage from './TangibleTypePage'
+import Header from './main/Header'
+import TableOfSpells from './main/TableOfSpells'
+import SpellTypePage from './content/SpellTypePage'
+import TableOfTangibles from './main/TableOfTangibles'
+import PotionPage from './content/PotionPage'
 
 function App () {
   const [spellHover, setSpellHover] = useState(null)
@@ -76,7 +76,7 @@ function App () {
           <h2>Tangible Magic</h2>
         </div>
         <Routes>
-          <Route path='/tangibles/:type' element={<TangibleTypePage />} />
+          <Route path='/tangibles/:type' element={<PotionPage />} />
         </Routes>
         <TableOfTangibles
           cardStyles={index => generateCardStyle(index, 'tangible')}

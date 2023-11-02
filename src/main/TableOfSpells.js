@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { Link, Route, Routes, useNavigate } from 'react-router-dom'
-import SpellTypePage from './SpellTypePage'
+import SpellTypePage from '../content/SpellTypePage'
 
 function TableOfSpells ({ cardStyles, hover }) {
   const navigate = useNavigate()
