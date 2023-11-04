@@ -17,7 +17,7 @@ function TableOfTangibles ({ cardStyles, hover }) {
       <Routes>
         <Route path='/tangibles/:type' element={<TangibleTypePage />} />
       </Routes>
-      <div className='card-container'>
+      <div className='card-container2'>
         {categories.map((tangibles, index) => (
           <Link
             to={`/tangibles/${tangibles.split(' ').join('').toLowerCase()}`}

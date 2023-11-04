@@ -67,7 +67,7 @@
   
 }
 
-.card-container {
+.card-container1 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
@@ -76,12 +76,21 @@
 	margin: auto;
 }
 
+.card-container2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 20px;
+	max-width: 62rem;
+	margin: auto;
+}
+
 [id^='content-card'] {
   margin: 20px;
 }
 
 [id^='tangible-card'] {
-  margin: 10px;
+  margin: 20px;
 }
 
 a {
