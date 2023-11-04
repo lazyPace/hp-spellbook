@@ -35,7 +35,7 @@ function TableOfSpells ({ cardStyles, hover }) {
       <Routes>
         <Route path='/spell-type/:type' element={<SpellTypePage />} />
       </Routes>
-      <div className='card-container'>
+      <div className='card-container1'>
         {spellTypes.map((spellType, index) => (
           <Link
             to={`/spell-type/${spellType.split(' ').join('').toLowerCase()}`}
