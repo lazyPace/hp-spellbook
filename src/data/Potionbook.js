@@ -14,7 +14,17 @@ const potionbook = [
       'Bananas',
       'One orange snake',
       'One green leaf'
-    ]
+    ],
+    instructions: [
+      'Add two dried newt spleens and stir counterclockwise for 5 minutes until dissolved.',
+      'Slice one ripe banana into thin pieces and add to cauldron. Stir clockwise for seven minutes while mixture turns a light shade of green.',
+      'Very carefully add one small, descaled orange snake to the potion. This must be timed precisely when the potion starts emitting a faint hissing sound.',
+      'Add a freshly plucked, whole green leaf to potion, being careful not to damage the leaf.',
+      'Let potion brew for one hour without stirring while the potion reaches its final deep green color.',
+      'Let cool for 10 minutes before decanting into a glass vial.'
+    ],
+    imageSrc: '/imgs/potions/ageingpotion.png',
+    title: 'A finished ageing potion'
   },
   {
     name: 'Amortentia',
@@ -25,7 +35,17 @@ const potionbook = [
     restricted: true,
     type: 'potions',
     subject: 'Potions',
-    ingredients: ['Pearl dust']
+    ingredients: ['Pearl dust'],
+    instructions: [
+      'Gently sprinkle pearl dust into your cauldron filled with 3 pints of pure spring water at a simmer.',
+      'Stir slowly with silver ladle as the potion begins to shimmer mother-of-pearl.',
+      'Wait for the surface to ripple without any physical disturbance.',
+      "Maintain low heat for 45 minutes; the potion's color will deepen into a rich, iridescent luster.",
+      'Cool the potion for 12 minutes exactly.',
+      'Carefully pour the completed potion into a crystal flask to preserve potency.'
+    ],
+    imageSrc: '/imgs/potions/amortentia.png',
+    title: 'A finished Amortentia potion in a clear, crystal flask'
   },
   {
     name: 'Antidote to Common Poisons',
@@ -53,7 +73,9 @@ const potionbook = [
       'Add 2 mistletoe berries to cauldron.',
       'Stir 2 times anti-clockwise.',
       'Wave your wand to complete the potion.'
-    ]
+    ],
+    imageSrc: '/imgs/potions/antidotetocommonpoisons.png',
+    title: 'Complete common antidote'
   },
   {
     name: 'Antidote to Uncommon Poisons',
@@ -68,7 +90,20 @@ const potionbook = [
       'Powdered graphorn horn',
       'Billywig stings',
       'Chizpurfle carapaces'
-    ]
+    ],
+    instructions: [
+      'Toss a handful of fire seeds into the cauldron; they should crackle upon contact with the heat.',
+      'Grind the graphorn horn into a fine powder and add it to the cauldron; watch for the potion to emit a soft glow.',
+      'Carefully add two billywig stings; the potion should now start to froth slightly.',
+      'Crush the chizpurfle carapaces using a pestle and mortar; sprinkle the fragments into the mixture.',
+      'Stir the potion thrice with a phoenix feather quill; the color should now be a consistent green.',
+      'Let the potion settle for a moment until the surface becomes smooth again.',
+      "Brew for exactly 53 minutes; the potion's efficacy is tied to precise timing.",
+      'Once finished, the potion will have a deep green hue and emit a faint, soothing aroma.',
+      "Decant the potion into bottles lined with rune-etched silver to maintain the antidote's potency."
+    ],
+    imageSrc: '/imgs/potions/antidotetouncommonpoisons.png',
+    title: 'Completed uncommon antidote'
   },
   {
     name: 'Babbling Beverage',
@@ -78,7 +113,19 @@ const potionbook = [
     restricted: false,
     type: 'potions',
     subject: 'Potions',
-    ingredients: ['Valerian sprigs', 'Aconite', 'Dittany']
+    ingredients: ['Valerian sprigs', 'Aconite', 'Dittany'],
+    instructions: [
+      'Add 3 Valerian sprigs to cauldron; watch for liquid to start bubbling slightly.',
+      'Sprinkle pinch of ground aconite over the valerian, which should change potions color to light yellow.',
+      'Tear the dittany leaves into small pieces and drop them into the mixture, causing the potion to turn vibrant red.',
+      'Stir potion briskly with wooden spoon until potions turns orange.',
+      'Recite Babbling Curse incantation to bind effect.',
+      'Simmer for exactly 38 minutes; potion should emit series of soft, nonsensical murmurs.',
+      'Once murmuring subsides, the potion is ready. Let the potion settle and bottle immediately.'
+    ],
+    associatedSpell: 'Babbling Curse',
+    imageSrc: '/imgs/potions/babblingbeverage.png',
+    title: 'Freshly completed babbling beverage.'
   },
   {
     name: 'Beautification Potion',
@@ -105,7 +152,9 @@ const potionbook = [
       'Add a lock of unicorn hair and stir vigorously.',
       'Add powdered ginger root and then heat.',
       'Wave your wand over the cauldron to finish the potion.'
-    ]
+    ],
+    imageSrc: '/imgs/potions/beautificationpotion.png',
+    title: 'Completed Beautification potion'
   },
   {
     name: 'Befuddlement Draught',
@@ -123,25 +172,9 @@ const potionbook = [
       'Juice one orange and add the rinds. Stir calmly for 5 seconds and vigorously for 7 seconds for 90 more seconds.',
       'Add sneezewort and stir clockwise once.',
       'Wave your wand over the cauldron to complete the potion.'
-    ]
-  },
-  {
-    name: 'Fire Protection Potion',
-    effect:
-      'Protects the drinker from flames. When drunk, induces a sensation of ice and frigidity in the drinker when present in fire.',
-    color: 'Blue',
-    difficulty: 2,
-    restricted: false,
-    type: 'potions',
-    subject: 'Potions',
-    ingredients: ['Bursting mushrooms', 'Salamander blood', 'Wartcap powder'],
-    instructions: [
-      'Slice bursting mushrooms with knife and add to cauldron.',
-      'Stir clockwise until potion turns blue.',
-      'Add salamander blood to cauldron, stir counterclockwise until potion turns green.',
-      'Crush wartcap powder in pestle, add to cauldron and stir clockwise until potion turns red.',
-      'Wave you wand in a triangular motion above the cauldron until the potion turns blue again.'
-    ]
+    ],
+    imageSrc: '/imgs/potions/befuddlementdrought.png',
+    title: 'Commercialized Beffudlement drought'
   },
   {
     name: 'Blood-Replenishing Potion',
@@ -151,7 +184,19 @@ const potionbook = [
     restricted: false,
     type: 'potions',
     subject: 'Potions',
-    ingredients: ['Powdered unicorn hair', 'Stewed mandrake']
+    ingredients: ['Powdered unicorn hair', 'Stewed mandrake'],
+    instructions: [
+      'Add two spoonfuls of powdered unicorn hair.',
+      'Stir slowly until unicorn hair dissolves and potion begins to thicken.',
+      'Chop stewed mandrake into fine pieces and add to potion.',
+      'Continue to stir; potion will thicken more and gradually take on a dark red hue.',
+      "Allow potion to brew for one hour, checking frequently to ensure it doesn't boil",
+      'Once potion is deep red color and has thick consistency, remove from heat.',
+      'Wave your wand above the potion in precise pattern to finalize rejuvinating properties.',
+      'Let potion cool before carefully pouring it into sterilized bottles.'
+    ],
+    imageSrc: '/imgs/potions/ReplenishingPotion.png',
+    title: 'Replenishing potion on a shelf at St. Mungos'
   },
   {
     name: 'Calming Draught',
@@ -178,6 +223,7 @@ const potionbook = [
     effect: 'Removes boils from the drinker.',
     color: 'Blue',
     difficulty: 1,
+    restricted: false,
     type: 'potions',
     subject: 'Potions',
     ingredients: [
@@ -203,6 +249,7 @@ const potionbook = [
       'Temporarily stuns doxies so that the pests could be removed from a dwelling.',
     color: 'Black',
     difficulty: 4,
+    restricted: false,
     type: 'potions',
     subject: 'Potions',
     ingredients: [
@@ -229,6 +276,7 @@ const potionbook = [
     effect: 'Promotes the growth of plants.',
     color: 'Light green',
     difficulty: 6,
+    restricted: false,
     type: 'potions',
     subject: 'Herbology',
     ingredients: [
@@ -245,6 +293,7 @@ const potionbook = [
     effect: 'Causes the drinker to fall into a deep, death-like slumber.',
     color: 'Pale lilac and clear',
     difficulty: 7,
+    restricted: false,
     type: 'potions',
     subject: 'Potions',
     ingredients: [
@@ -269,6 +318,7 @@ const potionbook = [
     effect: 'Relieves anxiety and agitation in the drinker.',
     color: 'Turquoise',
     difficulty: 6,
+    restricted: false,
     type: 'potions',
     subject: 'Potions',
     ingredients: [
@@ -300,6 +350,7 @@ const potionbook = [
       'Induces a sense of sudden, inexplicable happiness upon the drinker.',
     color: 'Sunshine-yellow',
     difficulty: 6,
+    restricted: false,
     type: 'potions',
     subject: 'Potions',
     ingredients: [
@@ -324,6 +375,7 @@ const potionbook = [
       'Explodes when touched by an outside source. Methods exist to brew this potion without it exploding.',
     color: 'Green or Orange',
     difficulty: 6,
+    restricted: true,
     type: 'potions',
     subject: 'Potions',
     ingredients: ['Erumpent Horn', 'Erumpent Tail', 'Exploding Fluid'],
@@ -342,6 +394,7 @@ const potionbook = [
       'Makes the drinker extraordinarily lucky for a period of time, during which every action they take is successful.',
     color: 'Molten gold',
     difficulty: 8,
+    restricted: true,
     type: 'potions',
     subject: 'Potions',
     ingredients: [
@@ -362,6 +415,47 @@ const potionbook = [
       'Add a sprinkle of powdered common rue over the surface and stir vigorously while heating for 7 minutes.',
       'Let cauldron boil over high heat for at least 150 days. Potion should turn a muted gold color over this time.',
       'Once enough time has elapsed, the potion should exhibit the sloshing characteristics of the final potion. Wave your wand over the potion in a figure of eight and say "Felixempra!" to finish the potion.'
+    ]
+  },
+  {
+    name: 'Fire-Protection Potion',
+    effect:
+      'Protects the drinker from fire and allows movement through flame unscathed.',
+    color: 'Blue',
+    difficulty: 2,
+    restricted: false,
+    type: 'potions',
+    subject: 'Potions',
+    ingredients: ['Bursting mushrooms', 'Salamander blood', 'Wartcap powder'],
+    instructions: [
+      'Slice bursting mushrooms with knife.',
+      'Add to cauldron and stir clockwise until the potion turns blue.',
+      'Add salamander blood, stir anti-clockwise until potion turns green.',
+      'Crush wartcap powder in pestle, add to cauldron and stir clockwise until the potion turns red.',
+      'Wait 20 minutes (16 brass/12 copper). The potion should be blue. Wave your wand once over the solution to finish potion.'
+    ]
+  },
+  {
+    name: 'Forgetfulness Potion',
+    effect: 'Causes an unknown degree of memory loss in the drinker.',
+    color: 'Orange',
+    difficulty: 3,
+    restricted: false,
+    type: 'potions',
+    subject: 'Potions',
+    ingredients: [
+      'Lethe River Water',
+      'Valerian sprigs',
+      'Mistletoe berries',
+      'Standard ingredient'
+    ],
+    instructions: [
+      'Add 2 drops of Lethe River Water to your cauldron and gently heat for 20-30 seconds.',
+      'Add 2 Valerian sprigs to cauldron and stir clockwise 3 times.',
+      'Wave your wand and leave to brew for 45-60 minutes.',
+      'Add 2 measures Standard ingredient and 4 mistletoe berries to mortar.',
+      'Crush into a medium-fine powder using pestle and add to cauldron.',
+      'Stir 5 times anti-clockwise and wave your wand to complete the potion.'
     ]
   }
 ]

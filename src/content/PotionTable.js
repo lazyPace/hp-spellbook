@@ -15,9 +15,11 @@ function PotionTable ({ data, type }) {
           <thead>
             <tr>
               <th>Potion</th>
-              <th>Ingredients</th>
+              <th>Active Ingredients</th>
+              <th>Difficulty</th>
               <th>Instructions</th>
               <th>Effects</th>
+              <th>Image</th>
             </tr>
           </thead>
           <tbody>
@@ -33,6 +35,9 @@ function PotionTable ({ data, type }) {
                     ))}
                   </ul>
                 </td>
+                <td>
+                  {/* Add logic here to display First Year, Second Year, Third Year, etc */}
+                </td>
                 <td className='instruction-field'>
                   {potion.instructions && potion.instructions.length > 0 ? (
                     <ol>
@@ -43,6 +48,18 @@ function PotionTable ({ data, type }) {
                   ) : null}
                 </td>
                 <td>{potion.effect}</td>
+                <td>
+                  {potion.imageSrc ? (
+                    <img
+                      className='potion-picture'
+                      src={potion.imageSrc}
+                      alt={potion.title}
+                      title={potion.title}
+                    />
+                  ) : (
+                    'No image of potion provided...'
+                  )}
+                </td>
               </tr>
             ))}
           </tbody>
