@@ -97,6 +97,16 @@ a {
   text-decoration: none;
 }
 
+.potion-picture {
+  display: block;
+  border: 2px solid black;
+  border-radius: 8px;
+  width: auto;
+  height: auto;
+  max-width: 18rem;
+  max-height: 18rem
+}
+
 .spell-header {
   background-color: rgba(0, 0, 0, 0.568);
   border: 2px solid rgb(254, 241, 193);
