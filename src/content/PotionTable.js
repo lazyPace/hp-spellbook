@@ -31,7 +31,7 @@ function PotionTable ({ data, type }) {
                 <td>
                   <ul>
                     {potion.ingredients.map(ingredient => (
-                      <li>{ingredient}</li>
+                      <li key={ingredient}>{ingredient}</li>
                     ))}
                   </ul>
                 </td>

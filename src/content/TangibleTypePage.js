@@ -36,7 +36,16 @@ function TangibleTypePage () {
   }
 
   const data = getDataForType()
-  console.log('the selected data is ', data)
+
+  //Use below to determine number of topcs/entries for a given subject
+  const sumOfTopics = data.filter(
+    topic =>
+      topic.subject === 'Potions' &&
+      topic.difficulty >= 7 &&
+      topic.difficulty < 10
+  )
+
+  console.log(sumOfTopics)
   return (
     <>
       {type === 'potions' && <PotionTable data={data} type={type} />}

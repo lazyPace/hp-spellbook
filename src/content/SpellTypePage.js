@@ -8,7 +8,7 @@ function SpellTypePage () {
 
   // use below var to check how many classes for a given subject in the log
   const sumOfClasses = spellbook.filter(spell => spell.subject === 'Post-Grad')
-  console.log(sumOfClasses)
+  //console.log(sumOfClasses)
   const selectedSpells = spellbook.filter(spell => spell.type === type)
 
   useEffect(() => {
